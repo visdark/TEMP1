@@ -62,75 +62,34 @@
   <i class="fa fa-check fa-stack-1x fa-inverse"></i>
 </span>Personal details</div>
                 <div class="col-md-3 step step-2 active"><span class="fa-stack fa-lg">
-  <i class="fa fa-circle fa-stack-2x step-num"></i>
-  <i class="fa fa-stack-1x fa-inverse" style="font-family:'Open Sans',Arial,Helvetica,sans-serif;">2</i>
+  <i class="fa fa-circle fa-stack-2x step-num" style="color: #00d449"></i>
+  <i class="fa fa-check fa-stack-1x fa-inverse"></i>
 </span>Your address</div>
-                <div class="col-md-3 step step-3"><span class="fa-stack fa-lg">
-  <i class="fa fa-circle fa-stack-2x step-num"></i>
-  <i class="fa fa-stack-1x fa-inverse" style="font-family:'Open Sans',Arial,Helvetica,sans-serif;">3</i>
+                <div class="col-md-3 step step-3 active"><span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x step-num" style="color: #00d449"></i>
+  <i class="fa fa-check fa-stack-1x fa-inverse"></i>
 </span>More about you</div>
-                <div class="col-md-3 step step-4"><span class="fa-stack fa-lg">
-  <i class="fa fa-circle fa-stack-2x step-num"></i>
-  <i class="fa fa-stack-1x fa-inverse" style="font-family:'Open Sans',Arial,Helvetica,sans-serif;">4</i>
+                <div class="col-md-3 step step-4 active"><span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x step-num" style="color: #00d449"></i>
+  <i class="fa fa-check fa-stack-1x fa-inverse"></i>
 </span>Complete application</div>
             </div>
             <div class="page-box">
             <div class="col-lg-10 col-lg-offset-1">
-                <form id="defaultForm" method="post" class="form-horizontal bv-form" action="target.php" novalidate="novalidate">
-                    <div class="pull-right"><span style="color: red">*</span> We need this information</div>
-                    <legend>Current Address</legend>
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Country <span>*</span></label>
-                        <div class="col-lg-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled></div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Address line 1  <span>*</span></label>
-                        <div class="col-lg-8">
-                            <input type="text" class="form-control" name="firstName" placeholder="" data-bv-field="Address"></div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Address line 2</label>
-                        <div class="col-lg-8">
-                            <input type="text" class="form-control" name="firstName" placeholder="" data-bv-field="Address"></div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Town  <span>*</span></label>
-                        <div class="col-lg-8">
-                            <input type="text" class="form-control" name="firstName" placeholder="" data-bv-field="Address"></div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">County</label>
-                        <div class="col-lg-8">
-                            <input type="text" class="form-control" name="firstName" placeholder="" data-bv-field="Address"></div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Postcode  <span>*</span></label>
-                        <div class="col-lg-8">
-                            <input type="text" class="form-control" name="firstName" placeholder="" data-bv-field="Address"></div>
-                    </div>
-                    <legend>Tax residency</legend>
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Country <span>*</span></label>
-                        <div class="col-lg-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled></div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Tax ID   <span>*</span></label>
-                        <div class="col-lg-8">
-                            <input type="text" class="form-control" name="firstName" placeholder="" data-bv-field="Address"></div>
-                    </div>
-<p>
-                    By submitting information I confirm that I agree to the City Index Terms and Conditions and Privacy Policy and may be contacted about my application.</p>
 
-                    <div class="form-group">
-                        <div class="col-lg-4 col-lg-offset-1">
-                            <button type="button" class="btn btn-primary btn-lg btn-block" id="resetBtn"><i class="fa fa-arrow-left" aria-hidden="true"></i> Previous</button>
-                        </div>
-                        <div class="col-lg-4 col-lg-offset-2">
-                            <button type="button" class="btn btn-primary btn-lg btn-block" id="resetBtn">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                        </div>
-                    </div>
+
+                <form id="defaultForm" method="post" class="form-horizontal bv-form" action="target.php" novalidate="novalidate">
+                    <legend>Important Information</legend>
+
+
+                    <P><strong>Based on the information you provided in the application form regarding your experience, knowledge and financial standing, it is our assessment that a spread bet, CFD or other leveraged trading account is not appropriate for you as you are unlikely to fully understand the risks involved. You will not be able to open a live account with us at this time.</strong></P>
+
+                    <p>Trading spread bets, CFDs and other leveraged products carries a high level of risk. We therefore encourage you to take advantage of our demo account in order to fully familiarise yourself with the risks involved. You may also wish to seek independent advice.</p>
+                    <button type="button" class="btn btn-default">Find out more about our demo account</button>
+
+
+
+
 
 
 
@@ -314,25 +273,11 @@
         forceParse: 0
     });
     $(function () {
-        //带图片
-        $("#sel_menu").select2({
-            templateResult: formatState,
-            templateSelection: formatState
-        });
-        $("#sel_menu2").select2();
-        $("#sel_menu3").select2({
-            templateResult: formatState,
-            templateSelection: formatState
-        });
+        $("#sel_menu10").select2();
+        $("#sel_menu11").select2();
+        $("#sel_menu12").select2();
+        $("#sel_menu13").select2();
     });
-    function formatState(state) {
-        if (!state.id) { return state.text; }
-        var $state = $(
-                '<span><img src="vendor/images/flags/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
-        );
-        return $state;
-    };
-
 </script>
 </body>
 </html>
